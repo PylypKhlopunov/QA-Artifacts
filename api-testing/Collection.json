@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "api-validation-suite-unique-id",
+		"name": "Medical System API (Standardized)",
+		"description": "API Test Suite for Healthcare Management System - Core Modules",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Patient Management",
+			"item": [
+				{
+					"name": "View Patient Card",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/patients/:patientId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"patients",
+								":patientId"
+							],
+							"variable": [
+								{
+									"key": "patientId",
+									"value": "placeholder-id"
+								}
+							]
+						}
+					},
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });",
+									"pm.test(\"Verify patient metadata presence\", function () {",
+									"    const jsonData = pm.response.json();",
+									"    pm.expect(jsonData).to.have.property('id');",
+									"    pm.expect(jsonData).to.have.property('status');",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					]
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{ "key": "accessTokenUrl", "value": "https://auth.example.com/oauth2/token", "type": "string" },
+			{ "key": "authUrl", "value": "https://auth.example.com/oauth2/authorize", "type": "string" },
+			{ "key": "clientSecret", "value": "hidden_client_secret", "type": "string" },
+			{ "key": "clientId", "value": "hidden_client_id", "type": "string" },
+			{ "key": "tokenName", "value": "Access_Token", "type": "string" },
+			{ "key": "addTokenTo", "value": "header", "type": "string" }
+		]
+	}
+}
