@@ -1,0 +1,19 @@
+{
+	"id": "environment-template-id",
+	"name": "Project_Environment_Template",
+	"values": [
+		{
+			"key": "baseUrl",
+			"value": "https://api.healthcare-system.example.com",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "patientId",
+			"value": "enter_patient_id_here",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment"
+}
