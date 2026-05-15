@@ -37,9 +37,9 @@ Sample defect reports featuring severity analysis, technical logs (API/SQL), and
 
 ## 🛠 Tech Stack & Tools
 - **Test Management:** Qase.io, Jira.
-- **API Testing:** Postman, Newman.
-- **Databases:** PostgreSQL, DBeaver.
-- **Documentation:** Markdown, Snagit/Loom.
+- **API Testing:** Postman, Swagger.
+- **Databases:** PostgreSQL, pgAdmin.
+- **Documentation:** Confluence, Markdown .
 - **Version Control:** Git, GitHub.
 
 ---
