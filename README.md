@@ -12,7 +12,7 @@ The goal of this project was to ensure the quality, reliability, and security of
 ### 1. [Test Strategy & Planning](test-plans/Test-Strategy.md)
 A high-level document outlining the testing scope, methodology, risk assessment, and exit criteria. It demonstrates an understanding of how to build a QA process from scratch.
 
-### 2. [Test Cases: Suite Collection](./)
+### 2. [Test Cases: Suite Collection](api-testing/)
 Detailed, structured test cases covering various system layers (Manual/E2E):
 - **[Authentication & Security](./Test_Cases_Authentication_GUI.md)**: Focus on access control and brute-force protection.
 - **[Account Management API](./Test_Cases_Account_Management.md)**: Functional and technical validation of user data.
