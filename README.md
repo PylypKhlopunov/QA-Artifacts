@@ -9,7 +9,7 @@ The goal of this project was to ensure the quality, reliability, and security of
 
 ## 📂 Project Artifacts
 
-### 1. [Test Strategy & Planning](./test-plans/Test-Strategy.md)
+### 1. [Test Strategy & Planning](test-plans/Test-Strategy.md)
 A high-level document outlining the testing scope, methodology, risk assessment, and exit criteria. It demonstrates an understanding of how to build a QA process from scratch.
 
 ### 2. [Test Cases: Suite Collection](./)
