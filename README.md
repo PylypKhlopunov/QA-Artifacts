@@ -12,16 +12,16 @@ The goal of this project was to ensure the quality, reliability, and security of
 ### 1. [Test Strategy & Planning](test-plans/Test-Strategy.md)
 A high-level document outlining the testing scope, methodology, risk assessment, and exit criteria. It demonstrates an understanding of how to build a QA process from scratch.
 
-### 2. [Test Cases: Suite Collection](api-testing/)
+### 2. [Test Cases: Suite Collection](test-documentation/)
 Detailed, structured test cases covering various system layers (Manual/E2E):
-- **[Authentication & Security](./Test_Cases_Authentication_GUI.md)**: Focus on access control and brute-force protection.
-- **[Account Management API](./Test_Cases_Account_Management.md)**: Functional and technical validation of user data.
-- **[Patient & Clinical Logic](./Test_Cases_Patient_Care_Logic.md)**: Complex business rules and RBAC (Role-Based Access Control).
+- **[Authentication & Security](test-documentation/Test_Cases_Authentication_GUI.md)**: Focus on access control and brute-force protection.
+- **[Account Management API](test-documentation/Test_Cases_Account_Management.md)**: Functional and technical validation of user data.
+- **[Patient & Clinical Logic](test-documentation/Test_Cases_Patient_Care_Logic.md)**: Complex business rules and RBAC (Role-Based Access Control).
 
 ### 3. [Checklists](./Checklists.md)
 High-level verification points for Smoke, Regression, and UI/UX testing to ensure rapid and efficient coverage.
 
-### 4. [API Testing (Postman)](./api-testing/)
+### 4. [API Testing (Postman)](api-testing/)
 A dedicated folder containing:
 - **Collection.json**: Automated test scripts with JS-assertions and OAuth2 flow.
 - **Environment.json**: Variable-driven configuration for different testing stages.
