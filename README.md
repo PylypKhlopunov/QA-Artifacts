@@ -9,28 +9,28 @@ The goal of this project was to ensure the quality, reliability, and security of
 
 ## 📂 Project Artifacts
 
-### 1. [Test Strategy & Planning](test-plans/Test-Strategy.md)
+### 1. [Test Strategy & Planning](test-plans/Test_Strategy.md)
 A high-level document outlining the testing scope, methodology, risk assessment, and exit criteria. It demonstrates an understanding of how to build a QA process from scratch.
 
 ### 2. [Test Cases: Suite Collection](test-documentation/)
 Detailed, structured test cases covering various system layers (Manual/E2E):
 - **[Authentication & Security](test-documentation/Test_Cases_Authentication_GUI.md)**: Focus on access control and brute-force protection.
-- **[Account Management API](test-documentation/Test_Cases_Account_Management.md)**: Functional and technical validation of user data.
+- **[Account Management API](test-documentation/Test_Cases_API_Account_Management.md)**: Functional and technical validation of user data.
 - **[Patient & Clinical Logic](test-documentation/Test_Cases_Patient_Care_Logic.md)**: Complex business rules and RBAC (Role-Based Access Control).
 
-### 3. [Checklists](./Checklists.md)
+### 3. [Checklists](test-documentation/Checklists.md)
 High-level verification points for Smoke, Regression, and UI/UX testing to ensure rapid and efficient coverage.
 
 ### 4. [API Testing (Postman)](api-testing/)
 A dedicated folder containing:
 - **Collection.json**: Automated test scripts with JS-assertions and OAuth2 flow.
 - **Environment.json**: Variable-driven configuration for different testing stages.
-- **[API Documentation](./api-testing/README.md)**: Technical guide on how to run and validate the backend.
+- **[API Documentation](api-testing/README.md)**: Technical guide on how to run and validate the backend.
 
-### 5. [SQL Scripts & Data Validation](./SQL_Testing_Queries.md)
+### 5. [SQL Scripts & Data Validation](sql-queries/SQL_Testing_Queries.md)
 A collection of professional SQL queries (PostgreSQL) for deep backend verification, including data integrity checks, audit log audits, and complex business logic validation.
 
-### 6. [Bug Reports](./Bug_Reports.md)
+### 6. [Bug Reports](bug-reports/Bug_Reports.md)
 Sample defect reports featuring severity analysis, technical logs (API/SQL), and clear reproduction steps for Critical, Major, and Minor issues.
 
 ---
